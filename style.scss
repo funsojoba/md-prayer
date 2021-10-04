@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    display:flex;
+
+    
+    @media only screen and (max-width:850px){
+        flex-direction: column;
+    }
+}
+
+.banner{
+    background: url('praying.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-text{
+        background: rgba(0,0,0,.5);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            color:#fff;
+        }
+        small{
+            color: #fff;
+        }
+
+        .logo a{
+            display: inline-block;
+
+            .image{
+                width:150px;
+                margin-bottom: 15px;
+
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+.text{
+    flex:2;
+    height: 100vh;
+    padding:40px;
+    background: #f9f9f9;
+    overflow: scroll;
+
+    ol li{
+        margin-bottom: 10px;
+        background:#fff;
+        padding:10px;
+    }
+}
